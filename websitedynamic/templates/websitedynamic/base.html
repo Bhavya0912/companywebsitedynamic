@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Silicon Private Limited</title>
+    <link rel="stylesheet" href="{% static 'css/sample.css' %}">
+    <link rel = "icon" href ="{% static 'img/titleicon.jpg' %}" type = "image/x-icon"> 
+              
+</head>
+
+<body>
+    <div class="container">
+    <div class="banner">
+        Silicon Private Limited.
+    </div>
+    <div class="menu">
+        <div class="menuitem"><a href="/home">Home</a></div> 
+        <div class="menuitem"><a href="/people">people</a></div>
+        <div class="menuitem"><a href="/products">products</a></div> 
+        <div class="menuitem"><a href="/contactus">contactus</a></div>
+        
+    </div><div class="content">
+    {% block content %}    
+    {% endblock  %}
+    </div>
+    <div class="footer">
+        Copyright © 2021 Silicon Private Limited, Developed by bhavya.
+    </div>
+    </div>
+</body>
+
+</html>
